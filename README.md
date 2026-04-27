@@ -1,11 +1,8 @@
 <div align="center">
 
-# Análise de Desempenho de Hidrômetros — Águas de Joinville
+# Análise de Desempenho de Hidrômetros
 
 **Desafio Técnico** | Integração, Análise Estatística e Análise Crítica de Dados
-
-**Autora:** Mariele Vieira da Silva  
-**Local:** Joinville — Santa Catarina — 2026
 
 **Base de dados:** 50 registros &nbsp;|&nbsp; **Período:** 2017–2026 &nbsp;|&nbsp; **Município:** Joinville – SC
 
@@ -13,9 +10,7 @@
 
 ---
 
-## Sobre o Projeto
-
-Em resposta ao Desafio Técnico proposto pela **Águas de Joinville**, este repositório apresenta os resultados de uma análise técnica realizada sobre a base de dados de hidrômetros disponibilizada em Excel.
+Este repositório apresenta os resultados de uma análise técnica realizada sobre a base de dados de hidrômetros disponibilizada em Excel.
 
 O trabalho contempla:
 - Integração de duas bases de dados
@@ -31,9 +26,7 @@ O trabalho contempla:
 
 ---
 
-## Metodologia
-
-### Fontes de Dados
+## Fontes de Dados
 
 Dois arquivos em formato `.xlsx` foram disponibilizados:
 
@@ -111,16 +104,6 @@ O hidrômetro **A21L060170** (matrícula 1203971-3) apresenta o maior volume acu
 
 ---
 
-## Recomendações Técnicas
-
-1. **Substituição imediata** do hidrômetro `A21L060170`: com IDM de 88,70%, o equipamento está fora da faixa de aceitação metrológica.
-
-2. **Substituição preventiva por volume**: estabelecer um limiar de acionamento (ex.: Volume > 1.500 m³) para inspeção metrológica periódica, priorizando os **7 hidrômetros com IDM abaixo de 97%**.
-
-3. **Verificação de dados**: a correlação perfeita (-1,00) é matematicamente improvável em campo — os dados podem ter sido gerados para simulação ou passaram por algum processo de normalização prévia.
-
----
-
 ## Conclusão
 
 A integração das duas bases de dados foi realizada com sucesso por meio de **inner join** com chave composta (`Matrícula + HD.Instalado`), resultando em **50 registros consolidados** sem perdas de informação.
@@ -133,10 +116,3 @@ Contudo, foi identificado **um caso crítico de submedição** (IDM = 88,70%) qu
 
 A correlação fortemente negativa entre volumetria acumulada e IDM confirma que o **envelhecimento dos hidrômetros** — expresso pelo volume total medido — é o principal fator de deterioração metrológica. Essa relação pode ser utilizada como base para um **programa de substituição preditiva**, reduzindo perdas comerciais e garantindo a acurácia do faturamento.
 
----
-
-## Referências
-
-- R Core Team (2024). *R: A language and environment for statistical computing*. R Foundation for Statistical Computing, Vienna, Austria.
-- Wickham, H. et al. (2019). Welcome to the tidyverse. *Journal of Open Source Software*, 4(43), 1686.
-- INMETRO (2012). *Portaria n.º 246 — Regulamento Técnico Metrológico para Hidrômetros*. Instituto Nacional de Metrologia, Qualidade e Tecnologia.
