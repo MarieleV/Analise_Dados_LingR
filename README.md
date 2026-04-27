@@ -1,12 +1,19 @@
-# 📊 Análise de Desempenho de Hidrômetros — Águas de Joinville
+<div align="center">
 
-> **Desafio Técnico** | Integração, Análise Estatística e Análise Crítica de Dados  
-> **Autora:** Mariele Vieira da Silva  
-> **Local:** Joinville — Santa Catarina — 2026
+# Análise de Desempenho de Hidrômetros — Águas de Joinville
+
+**Desafio Técnico** | Integração, Análise Estatística e Análise Crítica de Dados
+
+**Autora:** Mariele Vieira da Silva  
+**Local:** Joinville — Santa Catarina — 2026
+
+**Base de dados:** 50 registros &nbsp;|&nbsp; **Período:** 2017–2026 &nbsp;|&nbsp; **Município:** Joinville – SC
+
+</div>
 
 ---
 
-## 📋 Sobre o Projeto
+## Sobre o Projeto
 
 Em resposta ao Desafio Técnico proposto pela **Águas de Joinville**, este repositório apresenta os resultados de uma análise técnica realizada sobre a base de dados de hidrômetros disponibilizada em Excel.
 
@@ -22,11 +29,9 @@ O trabalho contempla:
 | **IDM (%)** | Índice de Desempenho Metrológico — expressa a precisão de medição do hidrômetro em relação a um padrão de referência |
 | **Volume (m³)** | Volumetria Total — total de m³ registrados pelo equipamento desde sua instalação |
 
-> 📦 **Base de dados:** 50 registros &nbsp;|&nbsp; 📅 **Período:** 2017–2026 &nbsp;|&nbsp; 📍 **Município:** Joinville – SC
-
 ---
 
-## 🛠️ Metodologia
+## Metodologia
 
 ### Fontes de Dados
 
@@ -47,7 +52,7 @@ A integração foi realizada por meio de um **inner join** utilizando as colunas
 
 ---
 
-## 📈 Resultados
+## Resultados
 
 ### Estatísticas Descritivas
 
@@ -76,7 +81,7 @@ Os boxplots foram desenvolvidos para visualizar a distribuição estatística da
 
 ---
 
-## 🔍 Análise Crítica
+## Análise Crítica
 
 ### Padrões Identificados
 
@@ -88,7 +93,7 @@ Foi identificado um único registro com comportamento crítico, que se destaca s
 
 | Matrícula | Hidrômetro | Volume (m³) | IDM (%) |
 |---|---|---|---|
-| **1203971-3** | **A21L060170** | **3.787** | **88,70** ⚠️ |
+| **1203971-3** | **A21L060170** | **3.787** | **88,70** |
 | 1203756-7 | A19L073882 | 2.243 | 93,77 |
 | 1203968-3 | A18L731516 | 2.152 | 94,06 |
 | 1203753-2 | A21L266357 | 1.777 | 95,29 |
@@ -96,17 +101,17 @@ Foi identificado um único registro com comportamento crítico, que se destaca s
 | 1203671-4 | A21L120897 | 1.467 | 96,31 |
 | 1203702-8 | A20L169855 | 1.331 | 96,76 |
 
-> ⚠️ **Linha vermelha = outlier crítico**
+> **Nota:** A primeira linha corresponde ao outlier crítico identificado na análise.
 
 O hidrômetro **A21L060170** (matrícula 1203971-3) apresenta o maior volume acumulado (3.787 m³) e o pior IDM da base (88,70%), configurando um caso de **submedição expressiva**. Em termos práticos, esse equipamento está deixando de registrar aproximadamente **11,3% do volume consumido**, gerando perda de receita.
 
 ### Há relação entre Volumetria e IDM?
 
-> ✅ **Sim.** A correlação de Pearson calculada foi de **-1,00** (correlação negativa perfeita), indicando que toda a variação no IDM é explicada linearmente pela variação na volumetria acumulada.
+> **Sim.** A correlação de Pearson calculada foi de **-1,00** (correlação negativa perfeita), indicando que toda a variação no IDM é explicada linearmente pela variação na volumetria acumulada.
 
 ---
 
-## ✅ Recomendações Técnicas
+## Recomendações Técnicas
 
 1. **Substituição imediata** do hidrômetro `A21L060170`: com IDM de 88,70%, o equipamento está fora da faixa de aceitação metrológica.
 
@@ -116,7 +121,7 @@ O hidrômetro **A21L060170** (matrícula 1203971-3) apresenta o maior volume acu
 
 ---
 
-## 📝 Conclusão
+## Conclusão
 
 A integração das duas bases de dados foi realizada com sucesso por meio de **inner join** com chave composta (`Matrícula + HD.Instalado`), resultando em **50 registros consolidados** sem perdas de informação.
 
@@ -130,7 +135,7 @@ A correlação fortemente negativa entre volumetria acumulada e IDM confirma que
 
 ---
 
-## 📚 Referências
+## Referências
 
 - R Core Team (2024). *R: A language and environment for statistical computing*. R Foundation for Statistical Computing, Vienna, Austria.
 - Wickham, H. et al. (2019). Welcome to the tidyverse. *Journal of Open Source Software*, 4(43), 1686.
