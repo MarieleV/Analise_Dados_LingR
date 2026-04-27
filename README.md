@@ -21,8 +21,8 @@ O trabalho contempla:
 
 | Variável | Descrição |
 |---|---|
-| **IDM (%)** | Índice de Desempenho Metrológico — expressa a precisão de medição do hidrômetro em relação a um padrão de referência |
-| **Volume (m³)** | Volumetria Total — total de m³ registrados pelo equipamento desde sua instalação |
+| **IDM (%)** | Índice de Desempenho Metrológico: expressa a precisão de medição do hidrômetro em relação a um padrão de referência |
+| **Volume (m³)** | Volumetria Total: total de m³ registrados pelo equipamento desde sua instalação |
 
 ---
 
@@ -30,8 +30,8 @@ O trabalho contempla:
 
 Dois arquivos em formato `.xlsx` foram disponibilizados:
 
-- **`Arquivo1.xlsx`** — Colunas: `Matrícula`, `HD.Instalado`, `Data de Instalação`, `Volume`
-- **`Arquivo2.xlsx`** — Colunas: `Matrícula`, `HD.Instalado`, `IDM`
+- **`Arquivo1.xlsx`** - Colunas: `Matrícula`, `HD.Instalado`, `Data de Instalação`, `Volume`
+- **`Arquivo2.xlsx`** - Colunas: `Matrícula`, `HD.Instalado`, `IDM`
 
 ### Integração das Bases
 
@@ -61,7 +61,7 @@ Base consolidada com 50 registros únicos:
 O gráfico de dispersão foi construído para identificar visualmente a relação entre a volumetria acumulada e o IDM de cada hidrômetro. A linha de tendência evidencia a direção e força da correlação.
 
 > **Resultado:** Correlação de Pearson = **-1,00**  
-> O gráfico revela uma relação linear perfeitamente negativa: à medida que o volume acumulado aumenta, o IDM diminui sistematicamente — confirmando premissas técnicas de funcionamento dos medidores, indicando que o aumento do volume registrado impacta diretamente na redução do desempenho metrológico devido ao desgaste natural e ao tempo de uso do hidrômetro.
+> O gráfico revela uma relação linear perfeitamente negativa: à medida que o volume acumulado aumenta, o IDM diminui sistematicamente, confirmando premissas técnicas de funcionamento dos medidores, indicando que o aumento do volume registrado impacta diretamente na redução do desempenho metrológico devido ao desgaste natural e ao tempo de uso do hidrômetro.
 
 ### Boxplots — IDM e Volumetria
 
@@ -114,5 +114,5 @@ A análise estatística demonstrou que o conjunto de hidrômetros avaliado possu
 
 Contudo, foi identificado **um caso crítico de submedição** (IDM = 88,70%) que requer intervenção imediata, além de um grupo de **6 equipamentos adicionais** com IDM entre 93% e 97% que merecem atenção preventiva.
 
-A correlação fortemente negativa entre volumetria acumulada e IDM confirma que o **envelhecimento dos hidrômetros** — expresso pelo volume total medido — é o principal fator de deterioração metrológica. Essa relação pode ser utilizada como base para um **programa de substituição preditiva**, reduzindo perdas comerciais e garantindo a acurácia do faturamento.
+A correlação fortemente negativa entre volumetria acumulada e IDM confirma que o **envelhecimento dos hidrômetros**, expresso pelo volume total medido, é o principal fator de deterioração metrológica. Essa relação pode ser utilizada como base para um **programa de substituição preditiva**, reduzindo perdas comerciais e garantindo a acurácia do faturamento.
 
