@@ -4,7 +4,7 @@
 
 **Desafio Técnico** | Integração, Análise Estatística e Análise Crítica de Dados
 
-**Base de dados:** 50 registros &nbsp;|&nbsp; **Período:** 2017–2026 &nbsp;|&nbsp; **Município:** Joinville – SC
+**Base de dados:** 50 registros &nbsp;|&nbsp; **Período:** 2017–2026 &nbsp;
 
 </div>
 
