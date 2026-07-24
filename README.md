@@ -9,8 +9,11 @@
 </div>
 
 ---
-
+<div align="center">
+  
 Este repositório apresenta os resultados de uma análise técnica realizada sobre a base de dados de hidrômetros disponibilizada em Excel.
+
+</div>
 
 O trabalho contempla:
 - Integração de duas bases de dados
@@ -51,10 +54,14 @@ A integração foi realizada por meio de um **inner join** utilizando as colunas
 
 Base consolidada com 50 registros únicos:
 
+<div align="center">
+
 | Variável | Mínimo | Média | Máximo | Desvio Padrão |
 |---|---|---|---|---|
 | **IDM (%)** | 88,70 | 98,85 | 101,10 | 2,34 |
 | **Volume (m³)** | 5 | 693,46 | 3.787 | 713,98 |
+
+</div>
 
 ### Dispersão — Volume × IDM
 
@@ -84,6 +91,8 @@ A análise revelou um padrão consistente e estatisticamente significativo: **hi
 
 Foi identificado um único registro com comportamento crítico, que se destaca simultaneamente nos dois boxplots e no gráfico de dispersão:
 
+<div align="center">
+
 | Matrícula | Hidrômetro | Volume (m³) | IDM (%) |
 |---|---|---|---|
 | **1203971-3** | **A21L060170** | **3.787** | **88,70** |
@@ -93,6 +102,8 @@ Foi identificado um único registro com comportamento crítico, que se destaca s
 | 1203851-2 | A21L264269 | 1.574 | 95,96 |
 | 1203671-4 | A21L120897 | 1.467 | 96,31 |
 | 1203702-8 | A20L169855 | 1.331 | 96,76 |
+
+</div>
 
 > **Nota:** A primeira linha corresponde ao outlier crítico identificado na análise.
 
